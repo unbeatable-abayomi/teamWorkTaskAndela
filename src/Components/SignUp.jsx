@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+
 
 export default class SignUp extends Component {
     render() {
@@ -11,11 +13,11 @@ export default class SignUp extends Component {
                <p>Please fill in this form to create an account.</p>
                <hr/>
                <label for="email"><b>Email</b></label>
-               <input type="text" placeholder="Enter Email" name="email" required />
+               <input type="email" placeholder="Enter Email" name="email" required />
            
                <label for="psw"><b>Password</b></label>
                <input type="password" placeholder="Enter Password" name="psw" required />
-              
+        
                <label for="psw-repeat"><b>Repeat Password</b></label>
             <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
               
@@ -25,8 +27,8 @@ export default class SignUp extends Component {
           <p>By creating an account you agree to our <a href="htt">Terms & Privacy</a>.</p>
             
           <div class="clearfix">
-          <button type="button" class="cancelbtn">Cancel</button>
-          <button type="submit" class="signupbtn">Sign Up</button>
+        <Link to='/'> <button type="button" class="cancelbtn">Cancel</button> </Link>
+          <button type="submit" class="signupbtn">submit</button>
         </div>
           </div>
             </form>
