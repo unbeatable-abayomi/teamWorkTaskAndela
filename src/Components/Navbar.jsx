@@ -8,11 +8,12 @@ export default function Navbar() {
             
             <div className='navbar-items'>
               <div className='navbar-image'>
-                <a href='htt' className='image-logo-text'>  <img src={logo} className='image-logo' alt="logo"/> mingle</a>
+              <img src={logo} className='image-logo' alt="logo"/>
+               <p> <Link  to='./' className='image-logo-text'> mingle</Link> </p>
              </div>
            <div className='navbar-sign-in_log-in'>
-       <Link to='/SignUp'> <input type='button' value='sign up'/> </Link> 
-              <input type='button' value='log in'/>
+             
+             
             </div>
             </div>
         </div>

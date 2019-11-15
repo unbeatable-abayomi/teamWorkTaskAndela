@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import logo from './logo.svg';
 import Frontend from './Components/Frontend';
-// import Login from './Components/Login';
-// import Navbar from './Components/Navbar';
+import Profile from './Components/Profile';
 
 import SignUp from './Components/SignUp';
 
@@ -28,6 +27,7 @@ function App() {
       <header className="App-header">
         <Route path='/' component={Frontend} exact/>
         <Route path='/SignUp' component={SignUp} />
+        <Route path='/Profile' component={Profile} />
        
       </header>
       <Route component={Error} />

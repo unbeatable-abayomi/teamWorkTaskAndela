@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import Navbar from './Navbar'
 
 
 export default class SignUp extends Component {
@@ -7,6 +8,7 @@ export default class SignUp extends Component {
         return (
             
             <div className='conatiner-signup'>
+            <Navbar/>
             <form>
                <div className='form-container'>
                <h1>Sign Up</h1>

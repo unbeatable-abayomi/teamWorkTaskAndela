@@ -1,5 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Titillium+Web&display=swap');
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Titillium Web', sans-serif; */
+
 .App {
   text-align: center;
 }
@@ -9,7 +12,6 @@
 }
 
 .App-header {
-  /* background-color: #e28307; */
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
   min-height: 100vh;
   display: flex;
@@ -25,29 +27,94 @@
 }
 /* mystyles */
 /* styles for login page start here */
-* {box-sizing: border-box}
+* {box-sizing: border-box};
+
+p {
+  margin: 0;
+}
 /* login form syles */
 .login-form{
-  border:  1px solid gray;
-  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
- background-blend-mode: multiply;
-  /* background-color: #192b2b !important; */
-  box-shadow: 0px 0px 2px 2px #d1d0d0;
+border:  1px solid gray;
+background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+background-blend-mode: multiply;
+font-family: 'Titillium Web', sans-serif; 
+box-shadow: 0px 0px 2px 2px #d1d0d0;
   color: rgb(238, 239, 245);
+  border-radius: 5px;
+  padding: 5px;
+  /* margin-top: -32px; */
+}
+/* form for sign up page */
+.form-container{
+  border:  1px solid gray;
+background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+background-blend-mode: multiply;
+font-family: 'Titillium Web', sans-serif; 
+box-shadow: 0px 0px 2px 2px #d1d0d0;
+  color: rgb(238, 239, 245);
+  border-radius: 5px;
+  padding: 5px;
+  width: 39rem;
+  height: 43rem;
+}
+.div-profileForm{
+  font-family: 'Titillium Web', sans-serif; 
+}
+/* styles for submitAND SignUpBottom */
+.signUp-input,.submit-input{
+padding: 2px;
+width: 80px;
+height: 33px;
+border-radius: 4px;
+font-size: 18px;
+font-family: 'Titillium Web', sans-serif;
+background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+ color: #fff;
+}
+/* profile page-submitButton */
+.submit-button-profile{
+  padding: 2px;
+  width: 80px;
+  height: 33px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Titillium Web', sans-serif;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+   color: #fff;
+}
+
+.sign-up-text{
+  color: #e28307;
+  text-decoration: none;
 }
 button{
-  color: #e28307;
+  padding: 2px;
+width: 80px;
+height: 33px;
+border-radius: 4px;
+font-size: 18px;
+font-family: 'Titillium Web', sans-serif;
+background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+ color: #fff;
 }
+img{
+    margin-top: 12px;
+}
+a { color: inherit; } 
 /* imagelogo */
 .image-logo{
   border-radius: 5px;
   width:50px;
   text-decoration: none !important;
+  margin-bottom: -2rem;
 }
 .image-logo-text{
   font-size: 50px;
   font-family: 'Amatic SC', cursive;
+  margin-bottom: 42rem;
 }
+
 /* input fields */
 input[type=text], input[type=password] , input[type=email] {
   width: 100%;
